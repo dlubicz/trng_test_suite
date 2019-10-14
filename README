@@ -1,0 +1,15 @@
+TRNG TEST SUITE is a suite of python scripts to compute the entropy rate of an oscillator
+based TRNG.
+
+It implements the algorithms described in the paper:
+Entropy Computation in Oscillator Based Physical Random Number Generator
+
+It is composed of the following python scripts:
+simul.multiple_ratio.dirac.py
+simul.multiple_ratio.py
+simul.nxor.dirac.py
+simul.nxor.py
+
+and the following library:
+source_mod_time.py
+
