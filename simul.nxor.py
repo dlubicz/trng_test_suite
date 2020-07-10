@@ -6,7 +6,7 @@ from math import *
 from source_mod_time import *
 
 alpha=0.5
-memory = 8
+memory = 5
 
 f = TimeFunction(0,1,5000, 1)
 f.TFconst(1)
