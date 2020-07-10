@@ -701,10 +701,10 @@ def trng_entropy(alpha, f, memory, nxor, qualityfactor, debug=False):
             n=info.stablestate(precision = 0.001, debug = True)
             print info.listnodes
         else:
-            n=info.stablestate()
-
+            n=info.stablestate(precision = 0.001)
 
         xorn = info.nmarkovxor(nxor)
+        print xorn.entropy()
 
         if debug:
             print xorn.listnodes
@@ -744,7 +744,7 @@ def trng_entropy(alpha, f, memory, nxor, qualityfactor, debug=False):
                     n=info.stablestate(precision=0.001, debug = True)
                     print info.listnodes
                 else:
-                    n=info.stablestate()
+                    n=info.stablestate(precision=0.001)
 
 
                 if i == 0:
@@ -753,7 +753,7 @@ def trng_entropy(alpha, f, memory, nxor, qualityfactor, debug=False):
                     xorn = xorn.markovxor(info)
                 if debug:
                     print i,xorn.listnodes
-        return xorn.entropy()
+    return xorn.entropy()
 
 
 """

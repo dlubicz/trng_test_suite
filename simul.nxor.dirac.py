@@ -11,7 +11,7 @@ memory = 1
 f = TimeFunction(0,1,5000, 1)
 f.TFdirac(0.25)
 
-ratio_slope = [3]*14
+ratio_slope = [3]
 
 
 facteur = 10**-6
