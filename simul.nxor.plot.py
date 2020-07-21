@@ -10,7 +10,7 @@ memory = 5
 min = float(0)
 max = float(0.1)
 nb_points = 10
-nb_xor = 1
+nb_xor = 4
 
 f = TimeFunction(0,1,5000, 1)
 f.TFconst(1)
